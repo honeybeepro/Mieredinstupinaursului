@@ -7,61 +7,140 @@
     <style>
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
-            background: linear-gradient(120deg, #fff3c4, #ffd86f);
-            color: #4a3c1a;
             margin: 0;
             padding: 0;
-            text-align: center;
+            background: #fff8e1;
+            color: #4a3c1a;
         }
         header {
             background-color: #f4c542;
             padding: 20px;
+            text-align: center;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
         header h1 {
             margin: 0;
             font-size: 2.2rem;
         }
-        main {
-            padding: 40px 20px;
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background: #ffd86f;
+            padding: 10px 0;
         }
-        .logo {
-            font-size: 60px;
+        nav a {
+            text-decoration: none;
+            color: #4a3c1a;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #e69500;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .product-card {
+            background: #fff3c4;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
         }
         .btn {
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 10px;
             background-color: #ffb300;
             color: white;
-            padding: 12px 25px;
+            padding: 10px 20px;
             border-radius: 8px;
             text-decoration: none;
-            font-size: 1rem;
             transition: background 0.3s;
         }
         .btn:hover {
             background-color: #e6a000;
         }
         footer {
-            margin-top: 40px;
-            padding: 15px;
-            font-size: 0.9rem;
             background-color: #f4c542;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>🐝 Miere din Stupina Ursului</h1>
-    </header>
-    <main>
-        <div class="logo">🍯</div>
-        <h2>Bun venit pe pagina noastră oficială!</h2>
-        <p>Produse naturale direct din stupina noastră, cu grijă pentru albine și natură.</p>
-        <a href="#" class="btn">Vezi produsele</a>
-    </main>
-    <footer>
-        © 2025 Miere din Stupina Ursului. Toate drepturile rezervate.
-    </footer>
+
+<header>
+    <h1>🐝 Miere din Stupina Ursului</h1>
+</header>
+
+<nav>
+    <a href="#home">Acasă</a>
+    <a href="#produse">Produse</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h2>Bun venit la Stupina Ursului!</h2>
+    <p style="text-align:center;">Produse naturale direct din stupina noastră, cu grijă pentru albine și natură.</p>
+</section>
+
+<section id="produse">
+    <h2>Produsele noastre</h2>
+    <div class="products">
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1587049352853-92b3b9ecf2e0?crop=entropy&cs=tinysrgb&fit=max&h=200&w=200" alt="Miere">
+            <h3>Miere naturală</h3>
+            <p>Stupină tradițională, culese manual.</p>
+            <a href="#" class="btn">Cumpără</a>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1592928300085-4f8dcb0c0ecb?crop=entropy&cs=tinysrgb&fit=max&h=200&w=200" alt="Polen">
+            <h3>Polen crud</h3>
+            <p>100% natural, bogat în vitamine.</p>
+            <a href="#" class="btn">Cumpără</a>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1610484824886-9ee3b23ed2f4?crop=entropy&cs=tinysrgb&fit=max&h=200&w=200" alt="Faguri cu miere">
+            <h3>Faguri cu miere</h3>
+            <p>Deliciu natural, direct din stup.</p>
+            <a href="#" class="btn">Cumpără</a>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contactează-ne</h2>
+    <p style="text-align:center;">Email: <a href="mailto:contact@stupinaursului.ro">contact@stupinaursului.ro</a></p>
+    <p style="text-align:center;">Telefon: 0721 123 456</p>
+</section>
+
+<footer>
+    © 2025 Miere din Stupina Ursului. Toate drepturile rezervate.
+</footer>
+
 </body>
 </html>
