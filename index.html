@@ -3,82 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miere din Stupina Ursului</title>
+    <title>Produse Apicole</title>
     <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; margin:0; padding:0; background:#fff8e1; color:#4a3c1a; }
-        header { background-color:#f4c542; padding:20px; text-align:center; box-shadow:0 4px 6px rgba(0,0,0,0.1); }
-        header h1 { margin:0; font-size:2.2rem; }
-        nav { display:flex; justify-content:center; gap:20px; background:#ffd86f; padding:10px 0; }
-        nav a { text-decoration:none; color:#4a3c1a; font-weight:bold; transition:color 0.3s; }
-        nav a:hover { color:#e69500; }
-        section { padding:40px 20px; max-width:1000px; margin:auto; }
-        h2 { text-align:center; margin-bottom:30px; }
-        .products { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
-        .product-card { background:#fff3c4; border-radius:10px; padding:20px; width:250px; text-align:center; box-shadow:0 4px 8px rgba(0,0,0,0.1); transition:transform 0.3s; }
-        .product-card:hover { transform:scale(1.05); }
-        .product-card img { width:100%; border-radius:10px; margin-bottom:15px; }
-        .btn { display:inline-block; margin-top:10px; background-color:#ffb300; color:white; padding:10px 20px; border-radius:8px; text-decoration:none; transition:background 0.3s; }
-        .btn:hover { background-color:#e6a000; }
-        footer { background-color:#f4c542; text-align:center; padding:20px; margin-top:40px; }
-        a.contact-link { color:#4a3c1a; text-decoration:none; font-weight:bold; }
-        a.contact-link:hover { color:#e69500; }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .product {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        .product div {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            width: 30%;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>🐝 Miere din Stupina Ursului</h1>
+    <h1>Produse Apicole</h1>
 </header>
 
 <nav>
-    <a href="#home">Acasă</a>
-    <a href="#produse">Produse</a>
-    <a href="#contact">Contact</a>
+    <a href="#miere">Miere</a>
+    <a href="#polen">Polen</a>
+    <a href="#faguri">Faguri cu Miere</a>
 </nav>
 
-<section id="home">
-    <h2>Bun venit la Stupina Ursului!</h2>
-    <p style="text-align:center;">Produse naturale direct din stupina noastră, cu grijă pentru albine și natură.</p>
-</section>
-
-<section id="produse">
-    <h2>Produsele noastre</h2>
-    <div class="products">
-        <div class="product-card">
-            <img src="RAW_LINK_MIERE" alt="Miere">
-            <h3>Miere naturală</h3>
-            <p>Stupină tradițională, culese manual.</p>
-            <a href="#" class="btn">Cumpără</a>
-        </div>
-        <div class="product-card">
-            <img src="RAW_LINK_POLEN" alt="Polen">
-            <h3>Polen crud</h3>
-            <p>100% natural, bogat în vitamine.</p>
-            <a href="#" class="btn">Cumpără</a>
-        </div>
-        <div class="product-card">
-            <img src="RAW_LINK_FAGURI" alt="Faguri cu miere">
-            <h3>Faguri cu miere</h3>
-            <p>Deliciu natural, direct din stup.</p>
-            <a href="#" class="btn">Cumpără</a>
-        </div>
+<section id="miere" class="product">
+    <div>
+        <img src="miere.jpg" alt="Miere">
+        <h3>Miere Naturală</h3>
+        <p>Delicioasă și 100% naturală.</p>
+        <p>Preț: 30 RON</p>
     </div>
 </section>
 
-<section id="contact">
-    <h2>Contactează-ne</h2>
-    <p style="text-align:center;">Telefon: <a class="contact-link" href="tel:0749932619">0749932619</a></p>
-    <p style="text-align:center;">Email: <a class="contact-link" href="mailto:Alindeac28@yahoo.com">Alindeac28@yahoo.com</a></p>
-    <p style="text-align:center;">WhatsApp: <a class="contact-link" href="https://wa.me/40749932619" target="_blank">Trimite mesaj</a></p>
-    <p style="text-align:center;">Distribuie site-ul pe WhatsApp: 
-        <a class="contact-link" href="https://wa.me/?text=https%3A%2F%2Fhoneybeepro.github.io%2FMieredinstupinaursului%2F" target="_blank">
-            Trimite link
-        </a>
-    </p>
+<section id="polen" class="product">
+    <div>
+        <img src="polen.jpg" alt="Polen">
+        <h3>Polen Crud</h3>
+        <p>Bogată în vitamine și minerale.</p>
+        <p>Preț: 50 RON</p>
+    </div>
+</section>
+
+<section id="faguri" class="product">
+    <div>
+        <img src="faguri.jpg" alt="Faguri cu Miere">
+        <h3>Faguri cu Miere</h3>
+        <p>Un deliciu natural direct din stup.</p>
+        <p>Preț: 70 RON</p>
+    </div>
 </section>
 
 <footer>
-    © 2025 Miere din Stupina Ursului. Toate drepturile rezervate.
+    <p>Contactează-ne: <a href="tel:‪+40749932619‬">0749 932 619</a> | <a href="mailto:Alindeac28@yahoo.com">Alindeac28@yahoo.com</a></p>
+    <p><a href="https://wa.me/40749932619" target="_blank">Trimite-ne un mesaj pe WhatsApp</a></p>
 </footer>
 
 </body>
