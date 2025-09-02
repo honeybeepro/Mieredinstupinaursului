@@ -1,115 +1,74 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miere din Stupina Ursului</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            margin:0; padding:0;
-            background: url('https://cdn.pixabay.com/photo/2017/06/20/22/44/bees-2426755_960_720.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color:#4a3c1a;
-        }
-        header { background-color:rgba(244,197,66,0.85); padding:20px; text-align:center; box-shadow:0 4px 6px rgba(0,0,0,0.1); }
-        header h1 { margin:0; font-size:2.2rem; }
-        nav { display:flex; justify-content:center; gap:20px; background:rgba(255,216,111,0.85); padding:10px 0; }
-        nav a { text-decoration:none; color:#4a3c1a; font-weight:bold; transition:color 0.3s; }
-        nav a:hover { color:#e69500; }
-        section { padding:40px 20px; max-width:1000px; margin:auto; background-color: rgba(255,255,255,0.85); border-radius: 10px; }
-        h2 { text-align:center; margin-bottom:30px; }
-        .products { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
-        .product-card { background:#fff3c4; border-radius:10px; padding:20px; width:250px; text-align:center; box-shadow:0 4px 8px rgba(0,0,0,0.1); transition:transform 0.3s; }
-        .product-card:hover { transform:scale(1.05); }
-        .product-card img { width:100%; border-radius:10px; margin-bottom:15px; }
-        .btn { display:inline-block; margin-top:10px; background-color:#25d366; color:white; padding:10px 20px; border-radius:8px; text-decoration:none; transition:background 0.3s; }
-        .btn:hover { background-color:#1ebe5d; }
-        footer { background-color:rgba(244,197,66,0.85); text-align:center; padding:20px; margin-top:40px; }
-        a.contact-link { color:#4a3c1a; text-decoration:none; font-weight:bold; }
-        a.contact-link:hover { color:#e69500; }
-        .highlight { background-color: #ffeb3b; display:inline-block; padding:8px 12px; border-radius:5px; margin:5px 0; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miere din Stupina Ursului</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: url('stupina_fundal_optimized.jpg') no-repeat center center fixed;
+        background-size: cover;
+        color: #fff;
+        text-align: center;
+    }
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+    }
+    .product {
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #000;
+        margin: 20px auto;
+        padding: 15px;
+        border-radius: 8px;
+        max-width: 300px;
+    }
+    button {
+        background-color: yellow;
+        border: none;
+        padding: 10px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: gold;
+    }
+</style>
 </head>
 <body>
 
-<header>
-    <h1>🐝 Miere din Stupina Ursului</h1>
-</header>
+<div class="overlay">
+    <h1>Miere din Stupina Ursului</h1>
+    <p>Produse apicole 100% naturale</p>
 
-<nav>
-    <a href="#home">Acasă</a>
-    <a href="#produse">Produse</a>
-    <a href="#deserturi">Deserturi</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<section id="home">
-    <h2>Bun venit la Stupina Ursului!</h2>
-    <p style="text-align:center;">Produse naturale direct din stupina noastră, cu grijă pentru albine și natură.</p>
-</section>
-
-<section id="produse">
-    <h2>Produsele noastre</h2>
-    <div class="products">
-        <div class="product-card">
-            <img src="https://raw.githubusercontent.com/honeybeepro/Mieredinstupinaursului/main/miere.jpg" alt="Miere">
-            <h3>Miere naturală</h3>
-            <p>Stupină tradițională, culese manual.</p>
-            <p><strong>Preț: 35 RON</strong></p>
-            <a href="https://wa.me/40749932619?text=Salut!%20Vreau%20sa%20comand%20Miere%20naturală%20-%2035%20RON" target="_blank" class="btn">Cumpără</a>
-        </div>
-        <div class="product-card">
-            <img src="https://raw.githubusercontent.com/honeybeepro/Mieredinstupinaursului/main/polen.jpg" alt="Polen">
-            <h3>Polen crud</h3>
-            <p>100% natural, bogat în vitamine.</p>
-            <p><strong>Preț: 70 RON</strong></p>
-            <a href="https://wa.me/40749932619?text=Salut!%20Vreau%20sa%20comand%20Polen%20crud%20-%2070%20RON" target="_blank" class="btn">Cumpără</a>
-        </div>
-        <div class="product-card">
-            <img src="https://raw.githubusercontent.com/honeybeepro/Mieredinstupinaursului/main/faguri.jpg" alt="Faguri cu miere">
-            <h3>Faguri cu miere</h3>
-            <p>Deliciu natural, direct din stup.</p>
-            <p><strong>Preț: 70 RON</strong></p>
-            <a href="https://wa.me/40749932619?text=Salut!%20Vreau%20sa%20comand%20Faguri%20cu%20miere%20-%2070%20RON" target="_blank" class="btn">Cumpără</a>
-        </div>
+    <div class="product">
+        <img src="https://raw.githubusercontent.com/user/repo/main/miere.jpg" alt="Miere naturală" style="max-width:100%;">
+        <h2>Miere naturală - 35 RON</h2>
+        <a href="https://wa.me/40749932619?text=Doresc%20Miere%20naturală">
+            <button>Cumpără</button>
+        </a>
     </div>
-</section>
 
-<!-- Secțiune Deserturi sănătoase cu miere -->
-<section id="deserturi" style="padding:40px 20px; background-color: #fff3c4; border-radius:10px; margin-top:40px;">
-    <h2 style="text-align:center; font-size:2rem; margin-bottom:30px;">Deserturi sănătoase cu miere 🍯</h2>
-    <div class="products" style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center;">
-        <!-- Bomboane raw cu cocos și miere -->
-        <div class="product-card" style="width:250px; text-align:center; background:#fff; border-radius:10px; padding:20px; box-shadow:0 4px 8px rgba(0,0,0,0.1);">
-            <img src="https://cdn.pixabay.com/photo/2016/11/29/09/32/coconut-1868053_960_720.jpg" alt="Bomboane cocos și miere" style="width:100%; border-radius:10px; margin-bottom:15px;">
-            <h3>Bomboane raw cu cocos și miere</h3>
-            <p><strong>Preț: 25 RON / 10 bucăți</strong></p>
-            <a href="https://wa.me/40749932619?text=Salut!%20Vreau%20sa%20comand%20Bomboane%20raw%20cu%20cocos%20și%20miere%20-%2025%20RON" target="_blank" class="btn">Cumpără</a>
-        </div>
-        <!-- Batoane Bounty sănătoase -->
-        <div class="product-card" style="width:250px; text-align:center; background:#fff; border-radius:10px; padding:20px; box-shadow:0 4px 8px rgba(0,0,0,0.1);">
-            <img src="https://cdn.pixabay.com/photo/2016/04/23/10/52/coconut-1349853_960_720.jpg" alt="Batoane Bounty" style="width:100%; border-radius:10px; margin-bottom:15px;">
-            <h3>Batoane Bounty sănătoase cu miere</h3>
-            <p><strong>Preț: 30 RON / 5 batoane</strong></p>
-            <a href="https://wa.me/40749932619?text=Salut!%20Vreau%20sa%20comand%20Batoane%20Bounty%20sănătoase%20cu%20miere%20-%2030%20RON" target="_blank" class="btn">Cumpără</a>
-        </div>
-        <!-- Nuci caramelizate cu miere -->
-        <div class="product-card" style="width:250px; text-align:center; background:#fff; border-radius:10px; padding:20px; box-shadow:0 4px 8px rgba(0,0,0,0.1);">
-            <img src="https://cdn.pixabay.com/photo/2017/06/30/10/54/nuts-2450072_960_720.jpg" alt="Nuci caramelizate cu miere" style="width:100%; border-radius:10px; margin-bottom:15px;">
-            <h3>Nuci caramelizate cu miere și scorțișoară</h3>
-            <p><strong>Preț: 20 RON / 150 g</strong></p>
-            <a href="https://wa.me/40749932619?text=Salut!%20Vreau%20sa%20comand%20Nuci%20caramelizate%20cu%20miere%20și%20scorțișoară%20-%2020%20RON" target="_blank" class="btn">Cumpără</a>
-        </div>
+    <div class="product">
+        <img src="https://raw.githubusercontent.com/user/repo/main/polen.jpg" alt="Polen crud" style="max-width:100%;">
+        <h2>Polen crud - 70 RON</h2>
+        <a href="https://wa.me/40749932619?text=Doresc%20Polen%20crud">
+            <button>Cumpără</button>
+        </a>
     </div>
-</section>
 
-<section id="contact">
-    <h2>Contactează-ne</h2>
-    <p style="text-align:center;" class="highlight">
-        Telefon: <a class="contact-link" href="tel:0749932619">0749 932 619</a>
-    </p>
-    <p style="text-align:center;" class="highlight">
-        Email: <a class="contact-link" href="mailto:Alindeac28@yahoo.com">Alindeac28@yahoo.com</a>
-    </p>
-    <
+    <div class="product">
+        <img src="https://raw.githubusercontent.com/user/repo/main/fagure.jpg" alt="Faguri cu miere" style="max-width:100%;">
+        <h2>Faguri cu miere - 70 RON</h2>
+        <a href="https://wa.me/40749932619?text=Doresc%20Faguri%20cu%20miere">
+            <button>Cumpără</button>
+        </a>
+    </div>
+
+    <p>📞 0749932619 | ✉ Alindeac28@yahoo.com</p>
+</div>
+
+</body>
+</html>
