@@ -10,34 +10,62 @@
         font-family: Arial, sans-serif;
         background: url('stupina_fundal_optimized.jpg') no-repeat center center fixed;
         background-size: cover;
-        color: #fff;
+        color: white;
         text-align: center;
     }
     .overlay {
         background-color: rgba(0, 0, 0, 0.5);
         padding: 20px;
     }
+    h1 {
+        font-size: 2.5em;
+        margin-bottom: 5px;
+    }
+    p.subtitle {
+        font-size: 1.2em;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
     .product {
-        background-color: rgba(255, 255, 255, 0.85);
-        color: #000;
-        margin: 20px auto;
+        background-color: rgba(255, 255, 255, 0.95);
+        color: black;
+        border-radius: 10px;
+        width: 250px;
         padding: 15px;
-        border-radius: 8px;
-        max-width: 300px;
+        text-align: center;
     }
     .product img {
-        border-radius: 6px;
+        width: 100%;
+        border-radius: 8px;
         margin-bottom: 10px;
     }
-    button {
+    .product h2 {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+    }
+    .buy-btn {
         background-color: yellow;
         border: none;
-        padding: 10px;
+        padding: 10px 20px;
+        font-size: 1em;
         font-weight: bold;
+        border-radius: 5px;
         cursor: pointer;
     }
-    button:hover {
+    .buy-btn:hover {
         background-color: gold;
+    }
+    footer {
+        margin-top: 30px;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.6);
+        font-size: 1em;
     }
 </style>
 </head>
@@ -45,41 +73,45 @@
 
 <div class="overlay">
     <h1>Miere din Stupina Ursului</h1>
-    <p>Produse apicole 100% naturale</p>
+    <p class="subtitle">Produse apicole 100% naturale</p>
 
-    <div class="product">
-        <img src="https://raw.githubusercontent.com/user/repo/main/miere_salcam.jpg" alt="Miere salcâm" style="max-width:100%;">
-        <h2>Miere salcâm - 45 RON/kg</h2>
-        <a href="https://wa.me/40749932619?text=Doresc%20Miere%20salcâm">
-            <button>Cumpără</button>
-        </a>
+    <div class="products">
+        <div class="product">
+            <img src="miere_salcam.jpg" alt="Miere salcâm">
+            <h2>Miere salcâm - 45 RON/kg</h2>
+            <a href="https://wa.me/40749932619?text=Doresc%20Miere%20salcâm">
+                <button class="buy-btn">Cumpără</button>
+            </a>
+        </div>
+
+        <div class="product">
+            <img src="miere_tei.jpg" alt="Miere tei">
+            <h2>Miere tei - 35 RON/kg</h2>
+            <a href="https://wa.me/40749932619?text=Doresc%20Miere%20tei">
+                <button class="buy-btn">Cumpără</button>
+            </a>
+        </div>
+
+        <div class="product">
+            <img src="miere_rapita.jpg" alt="Miere rapiță">
+            <h2>Miere rapiță - 35 RON/kg</h2>
+            <a href="https://wa.me/40749932619?text=Doresc%20Miere%20rapiță">
+                <button class="buy-btn">Cumpără</button>
+            </a>
+        </div>
+
+        <div class="product">
+            <img src="miere_poliflora.jpg" alt="Miere polifloră">
+            <h2>Miere polifloră - 35 RON/kg</h2>
+            <a href="https://wa.me/40749932619?text=Doresc%20Miere%20polifloră">
+                <button class="buy-btn">Cumpără</button>
+            </a>
+        </div>
     </div>
 
-    <div class="product">
-        <img src="https://raw.githubusercontent.com/user/repo/main/miere_tei.jpg" alt="Miere tei" style="max-width:100%;">
-        <h2>Miere tei - 35 RON/kg</h2>
-        <a href="https://wa.me/40749932619?text=Doresc%20Miere%20tei">
-            <button>Cumpără</button>
-        </a>
-    </div>
-
-    <div class="product">
-        <img src="https://raw.githubusercontent.com/user/repo/main/miere_rapita.jpg" alt="Miere rapiță" style="max-width:100%;">
-        <h2>Miere rapiță - 35 RON/kg</h2>
-        <a href="https://wa.me/40749932619?text=Doresc%20Miere%20rapiță">
-            <button>Cumpără</button>
-        </a>
-    </div>
-
-    <div class="product">
-        <img src="https://raw.githubusercontent.com/user/repo/main/miere_poliflora.jpg" alt="Miere polifloră" style="max-width:100%;">
-        <h2>Miere polifloră - 35 RON/kg</h2>
-        <a href="https://wa.me/40749932619?text=Doresc%20Miere%20polifloră">
-            <button>Cumpără</button>
-        </a>
-    </div>
-
-    <p>📞 0749932619 | ✉ Alindeac28@yahoo.com</p>
+    <footer>
+        📞 0749932619 | ✉ Alindeac28@yahoo.com
+    </footer>
 </div>
 
 </body>
